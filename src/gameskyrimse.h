@@ -26,13 +26,15 @@ public: // IPluginGame interface
     virtual QList<MOBase::ExecutableInfo> executables() const override;
     virtual void initializeProfile(const QDir &path, ProfileSettings settings) const override;
     virtual QString savegameExtension() const override;
+    virtual QString savegameSEExtension() const override;
     virtual QString steamAPPId() const override;
     virtual QStringList primaryPlugins() const override;
     virtual QStringList gameVariants() const override;
     virtual QString gameShortName() const override;
-	virtual QString gameNexusName() const override;
+	  virtual QString gameNexusName() const override;
     virtual QStringList iniFiles() const override;
     virtual QStringList DLCPlugins() const override;
+    virtual QStringList CCPlugins() const override;
     virtual LoadOrderMechanism loadOrderMechanism() const override;
     virtual int nexusModOrganizerID() const override;
     virtual int nexusGameID() const override;
